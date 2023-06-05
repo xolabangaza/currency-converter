@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- my style link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h2>Currency Converter</h2>
+<div class="container"> 
+    <div class="row">
+        <div id="converter">
+            <p>Put in your amount:</p>
+            <input type="number" class="search" id="money" placeholder="0.00">
+        </div>
+        <div class="input-text">From</div>
+        <select id="fromCurr">
+            <option value="ZAR" selected>ZAR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+    </div>
+    <div class="input-text">To</div>
+        <select id="toCurr">
+            <option value="ZAR">ZAR</option>
+            <option value="USD" selected>USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <div class="btn" id="convertBtn">
+            <button onclick="convert()"> 
+              convert 
+            </button>
+
+        </div>
+        <h3>The final Amount:</h3>
+        <div id="result">
+            
+            <!-- <input type="text" class="final"> -->
+        </div>
+
+</div>
+   
+ <!-- My JS link -->
+    <script src="./index.js"></script>
+</body>
+</html>
